@@ -1,13 +1,16 @@
 # UnityAR
-This project tend to show you how to implemation a unity ar demo by unity video player with tools like AE and PFtracker.
+[![Discord](https://img.shields.io/discord/1088018734616150057?style=for-the-badge)](https://discord.gg/JKZJfEpT7b)
+[![Apach License](https://img.shields.io/crates/l/rustc-serialize?style=for-the-badge)](https://github.com/faaccy/unity-ar/main/LICENSE)
+[![Documentation](https://img.shields.io/badge/Documentation-github-brightgreen.svg?style=for-the-badge)](https://github.com/faaccy/unity-ar/main/README.md)
+
+  This project tend to show you how to implemation a unity ar demo by unity video player with tools like AE and PFtracker.
 
 # Application
 This project will not include it full feature implemation and just clarify how camera solver can apply into
 unity3d.
-I will show some full feature sample like the below:
 
+[![Watch the video](https://img.youtube.com/vi/UR9HQHXQulk/hqdefault.jpg)]([https://youtu.be/vt5fpE0bzSY](https://www.youtube.com/watch?v=UR9HQHXQulk))
 
-https://user-images.githubusercontent.com/6877923/115474571-03c75800-a23e-11eb-8096-8973aad5fa9f.mp4
 
 # How it work?
 - select a video and get image(jpg/png) sequence by tools like AE.
