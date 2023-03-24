@@ -6,11 +6,8 @@ This project will not include it full feature implemation and just clarify how c
 unity3d.
 I will show some full feature sample like the below:
 
-```HTML
-<video width:60% height:auto controls>
-    <source src="https://www.youtube.com/watch?v=UR9HQHXQulk&t=558s" type="video/mp4">
-</video>
-```
+
+https://user-images.githubusercontent.com/6877923/115474571-03c75800-a23e-11eb-8096-8973aad5fa9f.mp4
 
 # How it work?
 - select a video and get image(jpg/png) sequence by tools like AE.
