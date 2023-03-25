@@ -1,0 +1,7 @@
+﻿UnityARDemo/.idea
+UnityARDemo/obj
+UnityARDemo/Temp
+UnityARDemo/Logs
+UnityARDemo/Assembly-CSharp.csproj
+*.sln
+UnityARDemo/Library
