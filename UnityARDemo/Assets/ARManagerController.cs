@@ -6,13 +6,21 @@ using UnityEngine.Video;
 public class ARManagerController : MonoBehaviour
 {
     public Camera ARCamera;
+    
+    public Material TrajectoryMaterial;
 
     public VideoPlayer ARPlayer;
 
     private const float _cameraHeight = 1.3f;
+    
+    public float Leftoffset;
+    
+    public float RightOffset;
 
     private List<Vector3> _positions = new List<Vector3>();
 
+    private List<Vector3> _eulerRotations = new List<Vector3>();
+    
     private List<Quaternion> _rotations = new List<Quaternion>();
     
     // Start is called before the first frame update
@@ -33,7 +41,6 @@ public class ARManagerController : MonoBehaviour
     {
         var currentFrame = (int)ARPlayer.frame;
         if (currentFrame < 0 || currentFrame > _positions.Count) return;
-        Debug.Log(currentFrame);
         ARCamera.transform.position = _positions[currentFrame];
         ARCamera.transform.rotation = _rotations[currentFrame];
     }
@@ -62,6 +69,7 @@ public class ARManagerController : MonoBehaviour
         {
             var arr = rotation.InnerText.Split(' ');
             var originalRotation = new Vector3(arr[0].ToFloat(), arr[1].ToFloat(), arr[2].ToFloat());
+            _eulerRotations.Add(originalRotation.ReverseRotation().eulerAngles);
             _rotations.Add(originalRotation.ReverseRotation());
         }
     }
@@ -71,13 +79,7 @@ public class ARManagerController : MonoBehaviour
     /// </summary>
     private void RenderVirtualTrajectory()
     {
-        var trajectory = new GameObject("Trajectory");
-        for (var i = 0; i < _positions.Count; ++i)
-        {
-            var cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            cube.transform.SetParent(trajectory.transform);
-            cube.transform.position = _positions[i] +  Vector3.down * _cameraHeight;
-            cube.transform.rotation = _rotations[i];
-        }
+        ARGameObjectFactory.CameraHeight = _cameraHeight;
+        ARGameObjectFactory.Init(_positions.ToArray(),_eulerRotations.ToArray(),Leftoffset,RightOffset,TrajectoryMaterial);
     }
 }

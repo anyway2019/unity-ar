@@ -5,3 +5,8 @@ UnityARDemo/Logs
 UnityARDemo/Assembly-CSharp.csproj
 *.sln
 UnityARDemo/Library
+UnityARDemo/Assets/Editor
+UnityARDemo/Assets/MobileDependencyResolver
+UnityARDemo/Assets/Editor.meta
+UnityARDemo/Assets/MobileDependencyResolver.meta
+UnityARDemo/Assets/Resources
