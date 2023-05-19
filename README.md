@@ -6,7 +6,7 @@
   This project tend to show you how to implement a unity ar demo by unity video player with tools like AE and PFtracker.This project will not include it full feature implemation and just clarify how camera solver can apply into
 unity3d.
 ![demo](https://github.com/faaccy/unity-ar/blob/main/UnityARDemo/Assets/Resources/20230418163554.png)
-# full feature Application
+# Full feature Application
 
 ![powerfun](https://github.com/lishuo710/unity-ar/blob/main/powerfun.png)
 
