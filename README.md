@@ -31,4 +31,4 @@ if you still feel confused you can see some basic tutorial on youtube https://ww
 - Scene solver can export an video to 3d model https://www.youtube.com/watch?v=OwgBn4fRuoU
 - Camera solver workflow with PFtrack AE and Cinema4d https://www.youtube.com/watch?v=E5hkRE70b7I
 - Object Solver https://www.youtube.com/watch?v=NaOJcVopkE8
-- and so on...
+- PFtrack Document https://support-thepixelfarm.co.uk/online-documentation/docs/pftrack.html
